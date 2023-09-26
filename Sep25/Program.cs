@@ -116,12 +116,39 @@ namespace Sept25
             }
             //Convert- ToInt32(), ToInt64(), ToInt16(), ToByte()*/
             //1 byte =8bits
-            var a = 1;
-            var b = 2;
-            Console.WriteLine(a + b);
-            Console.WriteLine((float)a / (float)b);
-            Console.WriteLine(a == b);
-            Console.Read();
+            // var a = 1;
+            //var b = 2;
+            // Console.WriteLine(a + b);
+            //Console.WriteLine((float)a / (float)b);
+            //Console.WriteLine(a == b);
+            //Console.Read();
+
+            try
+            {
+                string s = "AA";
+                int i = Convert.ToInt32(s);
+                Console.WriteLine(i);
+            }
+            catch {
+                Console.WriteLine("Write only number in the string variable");
+               
+            }
+            int a = 1;
+            int b = a++;
+            int c = b++;
+            Console.WriteLine("value of a is {0}",a);
+            Console.WriteLine("value of b is {0}",b);
+            Console.WriteLine("value of c is {0}",c);
+
+            int d = 20;
+            int e = ++d;
+            Console.WriteLine("value of d is {0}", d);
+            Console.WriteLine("value of e is {0}", e);
+
+
+
+
+
         }
     }
 
