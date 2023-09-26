@@ -99,7 +99,16 @@ namespace Program
 
             Console.WriteLine(oldPath);
             Console.WriteLine(newPath);
+
+            int n1 = 1;
+            int n2 = 2;
+            int n3 = n1 + n2;
+
+            Console.WriteLine($"The value of n1+n2 is {n3}");
+            
         }
+
+       
         
     }
 }
