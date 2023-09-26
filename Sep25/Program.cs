@@ -1,5 +1,5 @@
 ﻿using System;
-using Sept26.Math;
+//using Sept26.Math;
 namespace Sept25
 {
     class Program
