@@ -80,7 +80,7 @@ namespace Sept25
 
             //Type Conversion-implicit, explicit and conversion between non campatible types
             //implicit conversion
-            /*byte num = 2;
+            /*byte num = 2;akshat
             int i = num;
             Console.WriteLine(i);
 
