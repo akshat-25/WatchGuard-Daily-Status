@@ -1,4 +1,5 @@
 ﻿using System;
+using Sept26.Math;
 namespace Sept25
 {
     class Program
@@ -135,6 +136,8 @@ namespace Sept25
             }
             int a = 1;
             int b = a++;
+            Console.WriteLine("value of a is {0}", a);
+            Console.WriteLine("value of b is {0}", b);
             int c = b++;
             Console.WriteLine("value of a is {0}",a);
             Console.WriteLine("value of b is {0}",b);
@@ -145,7 +148,13 @@ namespace Sept25
             Console.WriteLine("value of d is {0}", d);
             Console.WriteLine("value of e is {0}", e);
 
+            byte number = 255;
 
+            number += 2;
+
+            Console.WriteLine(number);
+
+            Calculator calc = new Calculator();
 
 
 
