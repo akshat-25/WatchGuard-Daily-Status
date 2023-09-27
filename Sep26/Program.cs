@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Demo;
+using System;
 
 
 //using Sep26.Math;
@@ -105,7 +106,18 @@ namespace Program
             int n3 = n1 + n2;
 
             Console.WriteLine($"The value of n1+n2 is {n3}");
-            
+
+            //int n4 = &n2;
+            Person person = new Person()
+            {
+                FirstName = "AKsh",
+                LastName = "Para"
+            };
+            //person.FirstName = "Akshat";
+            //person.LastName = "Parakh";
+            person.introduce();
+
+
         }
 
        
