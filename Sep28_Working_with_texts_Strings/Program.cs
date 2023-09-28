@@ -121,7 +121,7 @@ namespace Demo
              }
             */
 
-            //-------------FILE AND FILE INFO--------------------
+            //-------------FILE AND FILE INFO-------------------
             /*
             Generally if you are performing a single operation on a file, 
             use the File class. If you are performing multiple operations on the same file, use FileInfo.
