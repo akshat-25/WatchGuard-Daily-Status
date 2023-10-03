@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualBasic;
 using System;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Demo
@@ -124,10 +125,12 @@ namespace Demo
             //-------------FILE AND FILE INFO-------------------
             /*
             Generally if you are performing a single operation on a file, 
-            use the File class. If you are performing multiple operations on the same file, use FileInfo.
+            use the File class. If you are performing multiple operations on the
+            same file, use FileInfo.
             The reason to do it this way is because of the security 
             checking done when accessing a file. When you create an instance of FileInfo, 
-            the check is only performed once. However, each time you use a static File method the check is performed. 
+            the check is only performed once. However, each time you use a 
+            static File method the check is performed. 
              */
             //var path = @"c:\somefile.jpg";
             //File.Copy(@"c:\temp\myFile.jpg", @"d:\temp2\abd.jpg", true);
@@ -150,32 +153,84 @@ namespace Demo
 
             //var path = @"C:\Users\aparakh\source\repos\WatchGuard";
 
-            //var dotIndex = path.IndexOf('.');
+            //var dotIndex =  path.IndexOf('.');
             //var extension = path.Substring(dotIndex);
 
             //Console.WriteLine(Path.GetExtension(path));
 
-            var path = @"C:\Users\aparakh\Documents\sql injection.txt";
+            /*  var path = @"C:\Users\aparakh\Documents\sql injection.txt";
 
-            var content = File.ReadAllText(path);
+              var content = File.ReadAllText(path);
 
-            var words = content.Split(' ');
+              var words = content.Split(' ');
 
-            Console.WriteLine(words.Length);
-            var dis = " ";
-            int temp = 0;
-            foreach (var word in words)
+              Console.WriteLine(words.Length);
+              var dis = " ";
+              int temp = 0;
+              foreach (var word in words)
+              {
+                  if(word.Length > temp)
+                  {
+                      dis = word;
+                      temp = word.Length;
+                  }
+
+
+              }
+
+              Console.WriteLine(dis); */
+
+            //// ----------------EXPERIMENTS---------------------
+
+            // If heavy manipulation of strings is involved then it is better to use String Builder..
+            //** System.Strings are IMMUTABLE..
+            //** String Builder strings are MUTABLE.. because of which we have better performance...
+            var s1 = "akshat";
+
+            var s2 = new StringBuilder("akshat");
+
+            Console.WriteLine(s1 == s2.ToString());     // T
+            Console.WriteLine(object.ReferenceEquals(s1,s2)); //F
+
+            var s3 = new StringBuilder(s2.Remove(0, 2).ToString()); //shat 
+            Console.WriteLine($"s2 is {s2}"); //shat
+            Console.WriteLine($"s3 is {s3}"); //shat
+            
+
+            Console.WriteLine(s2.ToString() == s3.ToString()); //true
+            Console.WriteLine(object.ReferenceEquals(s2, s3)); //false
+
+            string w1;
+            string e1 = String.Empty;
+            string e2 = null;
+            string e3 = "";
+            //Console.WriteLine("a" + e1 + "b");
+            //Console.WriteLine("a" + e2 + "b");
+            //Console.WriteLine("a" + e3 + "b");
+
+
+            Console.WriteLine(w1.Length);
+            Console.WriteLine("e1 length is {0}",e1.Length);
+
+            try
             {
-                if(word.Length > temp)
-                {
-                    dis = word;
-                    temp = word.Length;
-                }
-
-
+                Console.WriteLine("e2 null wali length is {0}", e2.Length);
+            }catch(Exception) { 
+            Console.WriteLine("Error occured");
             }
 
-            Console.WriteLine(dis);
+            String a = "";
+            String b = null;
+            String c;
+
+            Console.WriteLine(a == b);                        // False
+            //Console.WriteLine(c == b);                      // False
+            Console.WriteLine(object.ReferenceEquals(a,b));   // False
+            //Console.WriteLine(object.ReferenceEquals(b,c)); // False
+            //Console.WriteLine(e1);
+            //Console.WriteLine(e2);
+
+
 
         }
 

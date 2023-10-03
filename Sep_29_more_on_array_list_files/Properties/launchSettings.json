@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Sep_29_more_on_array_list_files": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    }
+  }
+}
