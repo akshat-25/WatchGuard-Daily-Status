@@ -230,7 +230,7 @@ namespace Demo
             Console.WriteLine(now.Hour);
             Console.WriteLine(now.Minute);
             Console.WriteLine(today.Date);
-            
+
 
 
         } 

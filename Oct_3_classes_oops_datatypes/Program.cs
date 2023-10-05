@@ -71,7 +71,7 @@ namespace Demo
             //    Console.WriteLine("The size of the class is" + Marshal.SizeOf(typeof(Foo)));
             //}
             int num1 = 10;  // Value Type
-            Object obj1 = num1; // Inplicit conversion of value type to object type.
+            Object obj1 = num1; // Implicit conversion of value type to object type.
 
             Console.WriteLine(obj1);
 
@@ -129,8 +129,6 @@ namespace Demo
             //    Console.WriteLine(sb.Capacity);
             //    Console.WriteLine(sb.Length);
 
-
-
             //    s = "World";
             //    sb.AppendLine("1234567891011213141516171819");
             //    String* strPtr2 = &s;
@@ -143,19 +141,20 @@ namespace Demo
 
             //}
             //String s = "Hello";
-            StringBuilder sb = new StringBuilder("Hello");
-            Console.WriteLine(sb.Capacity);
-            Console.WriteLine(sb.Length);
-            //s = "World";
-            sb.AppendLine("1234567891011213141516171819");
-            Console.WriteLine(sb.Capacity);
-            Console.WriteLine(sb.Length);
-            Console.WriteLine(sb.ToString());
+            //StringBuilder sb = new StringBuilder("Hello");
+            //Console.WriteLine(sb.Capacity);
+            //Console.WriteLine(sb.Length);
+            ////s = "World";
+            //sb.AppendLine("1234567891011213141516171819");
+            //Console.WriteLine(sb.Capacity);
+            //Console.WriteLine(sb.Length);
+            //Console.WriteLine(sb.ToString());
 
             //string s = "1234567891011213141516171819";
             //Console.WriteLine(s.Length);
 
-
+            Customer customer1 = new Customer("Akshat","Parakh");
+            customer1.printFullName();
 
 
 
@@ -167,7 +166,7 @@ namespace Demo
 
 
 /*
----------STRUCT-------- 
+                        --------- STRUCT --------- 
 ** Typically, you use structure types to design small data-centric types 
 that provide little or no behavior. For example, .NET uses structure types
 to represent a number (both integer and real), a Boolean value, a Unicode 
