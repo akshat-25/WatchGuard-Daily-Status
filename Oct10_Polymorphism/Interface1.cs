@@ -7,7 +7,7 @@
     interface member.
 
 3.  Interface members are public by default, and they don't allow
-    explicit  access modifiers.
+    explicit access modifiers.
 
 4.  Interfaces cannot contain fields.
 
@@ -72,10 +72,15 @@ class Program1
 */
 interface I1
 {
-    void func();
+     void func()
+    {
+        string a = "dkjfnkdfn";
+    }
+    static int a;
+    const int b = 1;
 }
 
-interface I2
+interface I2 : I1
 {
     void func();
 }
