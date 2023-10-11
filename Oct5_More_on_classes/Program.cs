@@ -8,7 +8,7 @@ namespace Demo
     
     class Program 
     {
-        static void Main(string[] args) {
+         /* static void Main(string[] args) {
 
 
             //var person = new Person(new DateTime(2001, 11, 25));
@@ -52,7 +52,7 @@ namespace Demo
 
             }
 
-        }
+        } */
         // *** If we want our method to return more than one value, then "out" parameter is used.
        
         static void useOfOut()

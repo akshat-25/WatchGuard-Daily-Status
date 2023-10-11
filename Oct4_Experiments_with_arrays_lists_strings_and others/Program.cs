@@ -134,9 +134,7 @@ namespace Demo
             //Console.WriteLine(string.IsNullOrEmpty(s1));
             //Console.WriteLine(string.IsNullOrWhiteSpace(s1));
 
-
             /*
-             
              The main difference between IsNullOrEmpty and IsNullOrWhiteSpace
             in C# is that IsNullOrEmpty checks if there's at least one character,
             while IsNullOrWhiteSpace checks every character until it finds a

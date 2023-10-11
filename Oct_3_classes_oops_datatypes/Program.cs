@@ -7,7 +7,6 @@ using System.Text;
 
 namespace Demo
 {
-
     class Program
     {
         enum Days
