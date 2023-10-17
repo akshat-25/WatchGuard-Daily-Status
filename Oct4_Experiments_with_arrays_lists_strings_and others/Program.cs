@@ -141,31 +141,7 @@ namespace Demo
             non-white-space character.
              */
 
-            string name = "akshat";
-
-            Console.WriteLine(string.IsNullOrEmpty(name)); // False
-
-            Console.WriteLine(string.IsNullOrWhiteSpace(name)); // False
-
-
-            Console.WriteLine(string.IsNullOrEmpty(string.Empty)); // True
-
-            Console.WriteLine(string.IsNullOrWhiteSpace(string.Empty)); // True
-
-
-            Console.WriteLine(string.IsNullOrEmpty(null)); // True
-
-            Console.WriteLine(string.IsNullOrWhiteSpace(null)); // True
-
-
-            Console.WriteLine(string.IsNullOrEmpty(" ")); // False
-
-            Console.WriteLine(string.IsNullOrWhiteSpace(" ")); // True
-
-
-            Console.WriteLine(string.IsNullOrEmpty("\0")); // False
-
-            Console.WriteLine(string.IsNullOrWhiteSpace("\n")); // True
+            
 
         }
     }

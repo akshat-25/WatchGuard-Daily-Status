@@ -4,12 +4,18 @@ using System.Runtime.Serialization;
 using System.Text;
 
 namespace Demo
-{
+{  
+
     class Program
     {
+        enum MyEnum
+        {
+            
+        }
         static void Main(string[] args) {
+           
             /* string s1 = "akshat parakh";
-
+            
              string s2 = s1.ToUpper();
              Console.WriteLine(s2);
 
@@ -137,7 +143,8 @@ namespace Demo
             //File.Delete(path);  
 
 
-            //var content = File.ReadAllText(path);
+            //var content = File.ReadAllLines(path);
+            //var content1 = File.ReadAllText(path);
             ////Console.WriteLine(content);
 
             //var fileInfo = new FileInfo(content);
